@@ -1,0 +1,1 @@
+answer: the reason for losing keys is that when the entry is written in put, another thread may write to the entry, then the modification of one of the two threads will be lost, and the key corresponding to the key cannot be found during the get operation. the case of entry.
